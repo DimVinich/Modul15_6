@@ -23,6 +23,7 @@ namespace Modul15_6
 
         static string[] GetAllStudents(Classroom[] classes)
         {
+            // метод, который соберет всех учеников всех классов в один список, используя LINQ
             return classes.SelectMany(s => s.Students).ToArray();
         }
 
